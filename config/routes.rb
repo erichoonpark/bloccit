@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :topics do
+     resources :posts, except: [:index]
+   end
 
   devise_for :users
   get 'welcome/index'
