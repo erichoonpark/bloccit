@@ -1,4 +1,7 @@
 <%# Showing the individual post %>
 <h1><%= @post.title %></h1>
-<%= link_to "Edit", edit_post_path(@post), class: 'btn btn-success' %>
 <p><%= @post.body %></p>
+<% #Edit Resource only available after authrization %>
+<% if policy(@post).edit? %>
+   <%= link_to "Edit", edit_post_path(@post), class: 'btn btn-success' %>
+ <% end %>
