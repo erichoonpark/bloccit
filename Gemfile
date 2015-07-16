@@ -28,6 +28,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro', '1.0'
 # Use the pundit gem for easy authorization rules
 gem 'pundit'
+# Use Faker to seed the database
+gem 'faker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
