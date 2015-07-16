@@ -1,7 +1,11 @@
 <%# Showing the individual post %>
-<h1><%= @post.title %></h1>
-<p><%= @post.body %></p>
+<h1><%= markdown_to_html @post.title %></h1>
+<div class="row">
+   <div class="col-md-8">
+     <p><%= markdown_to_html @post.body %></p>
+   </div>
 <% #Edit Resource only available after authrization %>
 <% if policy(@post).edit? %>
    <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
  <% end %>
+ </div>

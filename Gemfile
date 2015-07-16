@@ -10,11 +10,11 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# Use Bootstrap for CSS framework 
+# Use Bootstrap for CSS framework
 gem 'bootstrap-sass'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-# Use Devise for User Authentication 
+# Use Devise for User Authentication
 gem 'devise'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -30,6 +30,8 @@ gem 'figaro', '1.0'
 gem 'pundit'
 # Use Faker to seed the database
 gem 'faker'
+#User RedCarpet for text markdown
+gem 'redcarpet'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -57,5 +59,5 @@ group :production do
 end
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3' 
+  gem 'sqlite3'
 end
